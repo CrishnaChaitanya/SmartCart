@@ -26,7 +26,7 @@ SECRET_KEY = '$z6wzo3@nv&!2)+9l$h3&_cvp_d*rz(v9%h)n#+=pn0ifh7q3a'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', 'smarrtcart.herokuapp.com']
 
 
 # Application definition
