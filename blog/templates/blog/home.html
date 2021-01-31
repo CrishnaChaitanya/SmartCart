@@ -1,0 +1,116 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href={% static "blog/style.css" %}>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Tanmay</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="static/blog/logo.png" width="150px">
+            </div>
+            <nav>
+                <ul>
+                    <li class="search-icon">
+                        <input type="search" placeholder="Search🔍">
+                        <span><i class="fa fa-search" style="font-size:25px; margin: 30px;"></i></span>
+                    </li>
+                    <li><a href="{% url 'blog-login' %}">Login</a></li>
+                    <li><a href="{% url 'blog-contactus' %}">Contact Us</a></li>
+                    <li><a href="add something">Cart👜</a></li>
+
+                <span class='hello-msg'>Hello,{{request.user}}&nbsp&nbsp&nbsp</span>
+        <span><a href="{% url 'logout' %}">Logout</a></span>
+
+
+        </div>
+        
+        </ul>
+        
+        </nav>
+    </div>
+    <table>
+        <th><b>Shops Near You</b></th>
+        <tr>
+            <td>
+                <div class="cart-info mt-8">
+                    <img src="static/blog/1st.jpg">
+                    <div>
+                        <!-- <p><b>NISA LOCAL</b></p> -->
+                        <a href="{% url 'blog-shop' %}">
+                            <p><b>NISA LOCAL</b></p>
+                        </a>
+                        <p class="phone"><i class="fa fa-phone"></i> <u>949393949392 </u></p>
+                        <p><i class="fa fa-map-marker" aria-hidden="true"></i> Plot Bo R-553, Rabale Thane Belapur Road,
+                            Midc Ttc, Rabale</p>
+                        <p>Status:Open</p>
+                        <div class="explore">
+                            <a href="{% url 'blog-shop' %}" >
+                                <span>EXPLORE &nbsp;<i class="fa fa-arrow-right"></i></span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+              
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="static/blog/2nd.jpeg">
+                    <div>
+                        <!-- <p><b>LITTLE INDIA STORES</b></p>
+                         -->
+                        <a href=""><p><b>LITTLE INDIA STORES</b></p></a>
+                        <p class="phone"><i class="fa fa-phone"></i> <u>949393949392 </u></p>
+                        <p><i class="fa fa-map-marker" aria-hidden="true"></i> Plot Bo R-553, Rabale Thane Belapur Road,
+                            Midc Ttc, Rabale</p>
+                        <p>Status:Open</p>
+                        <div class="explore">
+                            <span>EXPLORE &nbsp;<i class="fa fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+              
+
+            </td>
+        </tr>
+
+        <tr>
+            <td>
+                <div class="cart-info">
+                    <img src="static/blog/3rd.jpg">
+                    <div>
+                        <!-- <p><b>24 SEVEN</b></p> -->
+                        <a href=""><p><b>24 SEVEN</b></p></a>
+                        <p class="phone"><i class="fa fa-phone"></i> <u>949393949392 </u></p>
+                        <p><i class="fa fa-map-marker" aria-hidden="true"></i> 39 Ambika Bhavan, B-cabin Shivaji Nagar,
+                            Naupada</p>
+                        <p>Status:Open</p>
+                        <div class="explore">
+                            <span>EXPLORE &nbsp;<i class="fa fa-arrow-right"></i></span>
+                        </div>
+                    </div>
+                </div>
+          
+
+            </td>
+        </tr>
+    </table>
+    </div>
+
+
+</body>
+
+</html>

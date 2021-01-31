@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  background-image: linear-gradient(to right, white, dodgerblue);
+}
+
+nav {
+  flex: 1;
+  text-align: right;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+nav ul li {
+  display: inline-block;
+  margin: 10px;
+  font-size: 21px;
+  font-weight: 50;
+}
+nav ul .search-icon {
+  height: 40px;
+  width: 540px;
+  display: flex;
+  background: #f2f2f2;
+  border: 2px solid rgb(221, 188, 1);
+  align-items: center;
+}
+
+nav ul .search-icon input {
+  height: 100%;
+  width: 450px;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  border-radius: 5px 0 0 5px;
+}
+a {
+  text-decoration: none;
+  color: black;
+  font-size: medium;
+}
+p {
+  color: rgb(0, 0, 0);
+}
+.container {
+  /* max-width:1300px; */
+  margin: auto;
+  /* padding-left:25px;
+    padding-right: 25px; */
+  border-top: 5px solid rgb(224, 191, 2);
+}
+table {
+  width: 100%;
+
+  border-collapse: separate;
+  border-spacing: 0 1em;
+
+  font-family: "Merriweather", serif;
+  font-size: large;
+  font-style: bold;
+}
+
+table a {
+  color: black;
+}
+.cart-info {
+  display: flex;
+}
+
+th {
+  text-align: left;
+  padding: 5px;
+  color: orange;
+  background-color: dodgerblue;
+  font-weight: normal;
+}
+td img {
+  width: 450px;
+  margin: 20px;
+}
+.col-2 {
+  margin: 10px;
+}
+.item {
+  margin: 10px;
+  background-color: skyblue;
+}
+.items {
+  display: flex;
+  flex-wrap: wrap;
+}
+.item {
+  text-align: center;
+  padding: 8px;
+}
+.items p {
+  font-size: medium;
+  font-weight: bold;
+}
+.item input,
+button {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+button {
+  background-color: rgb(255, 196, 87);
+}
+.item img {
+  width: 180px;
+  height: 180px;
+
+  /* height: 150px; */
+  /* object-fit: cover; */
+}
+.explore {
+  width: 180px;
+  height: 30px;
+  background-color: rgb(238, 203, 3);
+  text-align: center;
+  border: 2px solid rgb(192, 164, 2);
+}
+.explore span {
+  font-size: medium;
+}
+tr {
+  background-color: rgba(169, 174, 177, 0.42);
+  box-shadow: 0.9em 0.9em 0.9375em rgba(0, 0, 0, 0.219);
+  border-radius: 4px;
+}
+table a {
+  font-size: x-large;
+}
+table p {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 35px;
+  margin-bottom: 30px;
+}
+.phone {
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+.directions {
+  width: 90px;
+  height: 30px;
+  background-color: rgb(125, 93, 214);
+  text-align: center;
+}
+.col-2 p {
+  font-size: large;
+  font-weight: 100;
+}
+.specs {
+  display: flex;
+  flex-wrap: wrap;
+}
+.specs p {
+  padding-right: 45px;
+}
+.hello-msg {
+  font-size: 20px;
+  color: #f2f2f2;
+  margin-right: 20px;
+}

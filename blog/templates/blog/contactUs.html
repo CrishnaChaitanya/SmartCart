@@ -1,0 +1,35 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact us</title>
+    <link rel="stylesheet" type="text/css" href={% static "blog/main.css" %}>
+  </head>
+  <body>
+    <div class="contact-section">
+      <h1>Contact Us</h1>
+      <div class="border"></div>
+      <form class="contact-form" action="contactus_form.html" method="post">
+        <input type="text" class="contact-form-text" placeholder="Your name" />
+        <input
+          type="email"
+          class="contact-form-text"
+          placeholder="Your email"
+        />
+        <input
+          type="text"
+          class="contact-form-text"
+          placeholder="Your phone number"
+        />
+        <textarea
+          class="contact-form-text"
+          placeholder="Your message"
+        ></textarea>
+        <input type="submit" class="contact-form-btn" value="send" />
+      </form>
+    </div>
+  </body>
+</html>

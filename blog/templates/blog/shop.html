@@ -1,0 +1,164 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href={% static "blog/style.css" %}>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Tanmay</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="/static/blog/logo.png" width="150px">
+            </div>
+            <nav>
+                <ul>
+                    <li class="search-icon">
+                        <input type="search" placeholder="Search🔍">
+                        <span><i class="fa fa-search" style="font-size:25px; margin: 30px;"></i></span>
+                    </li>
+                    <li><a href="{% url 'blog-login' %}">Login</a></li>
+                    <li><a href="{% url 'blog-contactus' %}">Contact Us</a></li>
+                    <li><a href="add something">Cart👜</a></li>
+
+                <span class='hello-msg'>Hello,{{request.user}}&nbsp&nbsp&nbsp</span>
+        <span><a href="{% url 'logout' %}">Logout</a></span>
+
+
+        </div>
+    <div class="shop">
+        <div class="cart-info">
+            <div class="col-2">
+                <img src="/static/blog/1st.jpg" alt="Shop image" width="500px"></img>
+                <div class="specs">
+                <p><i class="fa fa-thumbs-up"></i></p>
+                <p><i class="fa fa-bookmark"></i></p>
+                <p>Crowd: 🟢</p>
+                <p class="directions"><b>Directions</b>&#8599;</p>
+            </div>
+           
+            </div>
+
+
+            <div class="col-2">
+                <p>Shop Name:<b>NISA LOCAL</b></p>
+                <p>Address:<b>Plot Bo R-553, Rabale Thane Belapur Road, Midc Ttc, Rabale</b></p>
+                <p>Landmark: <b>Gandhi statue</b></p>
+                <p>Distance: <b>1KM</b></p>
+                <p>Phone: <b>9393939393</b></p>
+                <p>Rating:⭐⭐⭐⭐</p>
+                <p>Ask to order:</p>
+                <p>Timming:<b>7am--11pm</b></p>
+                <p>Status:<b>OPEN</b></p>
+
+
+
+            </div>
+            
+            <br>
+
+
+        </div>
+    </div>
+    <hr>
+    <h2 class="kkc">Shop Items</h2><br>
+    <h3 class="kkc">Search items: <input type="search" placeholder="Sprite"></h3>
+
+    <div class="items">
+        <div class="item">
+            <img src="/static/blog/s1.png"></img>
+            <p>Product Name</p>
+            <p>Price</p>
+            <input type="number" value="1"><br>
+            <button>Add to cart</button>
+        </div>
+        <div class="item">
+            <img src="/static/blog/s2.png"></img>
+            <p>Product Name</p>
+            <p>Price</p>
+            <input type="number" value="1"><br>
+            <button>Add to cart</button>
+
+        </div>
+        <div class="item">
+            <img src="/static/blog/s3.png"></img>
+            <p>Product Name</p>
+            <p>Price</p>
+            <input type="number" value="1"><br>
+            <button>Add to cart</button>
+
+        </div>
+        <div class="item">
+            <img src="/static/blog/s4.png"></img>
+            <p>Product Name</p>
+            <p>Price</p>
+            <input type="number" value="1"><br>
+            <button>Add to cart</button>
+
+        </div>
+        <div class="item">
+            <img src="/static/blog/s5.png"></img>
+            <p>Product Name</p>
+            <p>Price</p>
+            <input type="number" value="1"><br>
+            <button>Add to cart</button>
+
+        </div>
+        <div class="item">
+            <img src="/static/blog/carrot.jpg"></img>
+            <p>Product Name</p>
+            <p>Price</p>
+            <input type="number" value="1"><br>
+            <button>Add to cart</button>
+
+        </div>
+        <div class="item">
+            <img src="/static/blog/corriander.jpg"></img>
+            <p>Product Name</p>
+            <p>Price</p>
+            <input type="number" value="1"><br>
+            <button>Add to cart</button>
+
+        </div>
+        <div class="item">
+            <img src="/static/blog/potatot.jpg"></img>
+            <p>Product Name</p>
+            <p>Price</p>
+            <input type="number" value="1"><br>
+            <button>Add to cart</button>
+
+        </div>
+        <div class="item">
+            <img src="/static/blog/tomato.jpg"></img>
+            <p>Product Name</p>
+            <p>Price</p>
+            <input type="number" value="1"><br>
+            <button>Add to cart</button>
+
+        </div>
+        <div class="item">
+            <img src="/static/blog/sprit.png"></img>
+            <a href="{% url 'blog-product' %}">
+                <p>Sprite</p>
+            </a>
+            <p>Rs.40</p>
+            <input type="number" value="1"><br>
+            <button>Add to cart</button>
+
+        </div>
+    </div>
+
+
+    </div>
+
+
+</body>
+
+</html>

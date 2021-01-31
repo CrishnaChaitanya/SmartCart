@@ -1,0 +1,134 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" type="text/css" href={% static "blog/style.css" %}>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Tanmay</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <img src="/static/blog/logo.png" width="150px">
+            </div>
+            <nav>
+                <ul>
+                    <li class="search-icon">
+                        <input type="search" placeholder="Search🔍">
+                        <span><i class="fa fa-search" style="font-size:25px; margin: 30px;"></i></span>
+                    </li>
+                    <li><a href="{% url 'blog-login' %}">Login</a></li>
+                    <li><a href="{% url 'blog-contactus' %}">Contact Us</a></li>
+                    <li><a href="add something">Cart👜</a></li>
+
+                <span class='hello-msg'>Hello,{{request.user}}&nbsp&nbsp&nbsp</span>
+        <span><a href="{% url 'logout' %}">Logout</a></span>
+
+
+        </div>
+    <div class="product">
+        <div class="cart-info">
+            <div class="col-2">
+                <img src="/static/blog/sprit.png" alt="Shop image" width="500px">
+            </div>
+            <div class="col-2">
+                <p class="sprite"><b>Sprite</b></p>
+                <p class="price">Price : <b>Rs.40</b></p>
+                <input type="number" value="1">
+                <p class="acer">Whislist</p>
+                <p class="acer"><b>ORDER</b></p>
+                <p class="acer"> WE CAN ADD ANYTHING HERE</p>
+                
+                
+
+            </div>
+            
+
+        </div>
+        <p><b>About:Sprite is a clear lime drink truly meant to quench your thirst & refresh you since 1999. Now, anything else under the sky! It‚¬„¢s not your agony aunt but just a drink that refreshes you. Be it summers or winters, Sprite will always keep you refreshed. It has true feelings for your thirst. Believe it! Its crisp lemon-lime taste makes you feel like you‚¬„¢ve just stepped out of a cold shower. Clear Hai?  this refreshing Sprite by just looking at the page so Buy Now!</b></p>
+    </div>
+    <hr>
+    <div class="items">
+        <div class="item">
+            <img src="/static/blog/s1.png">
+            <p>Product Name</p>
+            <p>Price</p>
+            <input type="number" value="1"><br>
+            <button>Add to cart</button>
+        </div>
+        <div class="item">
+            <img src="/static/blog/s2.png">
+            <p>Product Name</p>
+            <p>Price</p>
+            <input type="number" value="1"><br>
+            <button>Add to cart</button>
+
+        </div>
+        <div class="item">
+            <img src="/static/blog/s3.png">
+            <p>Product Name</p>
+            <p>Price</p>
+            <input type="number" value="1"><br>
+            <button>Add to cart</button>
+
+        </div>
+        <div class="item">
+            <img src="/static/blog/s4.png">
+            <p>Product Name</p>
+            <p>Price</p>
+            <input type="number" value="1"><br>
+            <button>Add to cart</button>
+
+        </div>
+        <div class="item">
+            <img src="/static/blog/s5.png">
+            <p>Product Name</p>
+            <p>Price</p>
+            <input type="number" value="1"><br>
+            <button>Add to cart</button>
+
+        </div>
+        <div class="item">
+            <img src="/static/blog/corriander.jpg">
+            <p>Product Name</p>
+            <p>Price</p>
+            <input type="number" value="1"><br>
+            <button>Add to cart</button>
+
+        </div>
+        <div class="item">
+            <img src="/static/blog/potatot.jpg">
+            <p>Product Name</p>
+            <p>Price</p>
+            <input type="number" value="1"><br>
+            <button>Add to cart</button>
+
+        </div>
+        <div class="item">
+            <img src="/static/blog/carrot.jpg">
+            <p>Product Name</p>
+            <p>Price</p>
+            <input type="number" value="1"><br>
+            <button>Add to cart</button>
+
+        </div>
+        <div class="item">
+            <img src="/static/blog/tomato.jpg">
+            <p>Product Name</p>
+            <p>Price</p>
+            <input type="number" value="1"><br>
+            <button>Add to cart</button>
+
+        </div>
+
+    
+</div>
+
+    
+</body>
+</html>
