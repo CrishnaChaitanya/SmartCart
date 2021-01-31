@@ -1,1 +1,1 @@
-web: gunicorn danjo_project.wsgi --log-file -
+web: gunicorn danjo_project.wsgi 
